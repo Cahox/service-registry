@@ -1,4 +1,4 @@
 commonLabels:
-  app: clashbots
+  app: service-registry
 resources:
   - deployment.yaml
