@@ -1,0 +1,4 @@
+commonLabels:
+  app: clashbots
+resources:
+  - deployment.yaml
