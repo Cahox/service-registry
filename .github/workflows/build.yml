@@ -10,7 +10,7 @@ env:
   GKE_CLUSTER: clashbots    # Add your cluster name here.
   GKE_ZONE: europe-west4-c  # Add your cluster zone here.
   DEPLOYMENT_NAME: service-registry # Add your deployment name here.
-  IMAGE: cahox/service-registry
+  IMAGE: service-registry
 
 jobs:
   setup-build-publish-deploy:
