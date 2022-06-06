@@ -7,7 +7,7 @@ on:
 
 env:
   PROJECT_ID: ${{ secrets.GKE_PROJECT_ID }}
-  GAR_LOCATION: europe
+  GAR_LOCATION: europe-west4
   GKE_CLUSTER: clashbots
   GKE_ZONE: europe-west4-c
   DEPLOYMENT_NAME: service-registry
