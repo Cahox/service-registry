@@ -12,7 +12,7 @@ env:
   GKE_CLUSTER: clashbots
   GKE_ZONE: europe-west4-c
   DEPLOYMENT_NAME: service-registry
-  REPOSITORY: clashbots
+  REPOSITORY: clashbots-repo
   IMAGE: service-registry
 
 jobs:
