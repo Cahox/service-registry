@@ -11,7 +11,7 @@ RUN mvn -f /opt/pom.xml clean package
 # Package stage
 #
 FROM openjdk:11-jre-slim
-COPY --from=build /opt/target/*.jar /usr/local/lib/infoservice.jar
+COPY --from=build /opt/target/*.jar /usr/local/lib/app.jar
 ENV PORT 3307
 EXPOSE 3307
-ENTRYPOINT ["java","-jar","/usr/local/lib/infoservice.jar"]
+ENTRYPOINT ["java","-jar","/usr/local/lib/app.jar"]
