@@ -57,7 +57,7 @@ jobs:
 
       - name: Publish
         run: |-
-          docker push "$GAR_LOCATION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/$IMAGE:$GITHUB_SHA"
+          docker push "europe-west4-docker.pkg.dev/synthetic-keel-346917/service-registry/registry"
 
       - name: Set up Kustomize
         run: |-
@@ -67,7 +67,7 @@ jobs:
       - name: Deploy
         run: |-
           # replacing the image name in the k8s template
-          ./kustomize edit set image LOCATION-docker.pkg.dev/PROJECT_ID/REPOSITORY/IMAGE:TAG=$GAR_LOCATION-docker.pkg.dev/$PROJECT_ID/$REPOSITORY/$IMAGE:$GITHUB_SHA
+          ./kustomize edit set image europe-west4-docker.pkg.dev/synthetic-keel-346917/service-registry/registry
           ./kustomize build . | kubectl apply -f -
           kubectl rollout status deployment/$DEPLOYMENT_NAME
           kubectl get services -o wide
