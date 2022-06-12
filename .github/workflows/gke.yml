@@ -50,7 +50,7 @@ jobs:
       - name: Build
         run: |-
           docker build \
-            --tag "europe-west4-docker.pkg.dev/synthetic-keel-346917/clashbots-repo/registry:latest" \
+            --tag "europe-west4-docker.pkg.dev/synthetic-keel-346917/clashbots-repo/service-registry:latest" \
             --build-arg GITHUB_REF="$GITHUB_REF" \
             .
 
