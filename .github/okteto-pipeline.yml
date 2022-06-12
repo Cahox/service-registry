@@ -1,5 +1,5 @@
 deploy:
-  - okteto build -t okteto.dev/service-registry:latest -f ../Dockerfile ../.
+  - okteto build -t okteto.dev/service-registry:dev -f ../Dockerfile ../.
   - kubectl apply -f ../k8s
   - kubectl rollout restart deployment/service-registry
 devs:
