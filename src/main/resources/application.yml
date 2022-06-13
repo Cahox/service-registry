@@ -1,5 +1,6 @@
 server:
   port: 8761
+  address: https://service-registry-cahox.cloud.okteto.net/
 
 spring:
   application:
