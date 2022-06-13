@@ -5,11 +5,11 @@ metadata:
   annotations:
     dev.okteto.com/auto-ingress: "true"
   labels:
-    app: service-registry
+    app: clashbots
 spec:
   type: ClusterIP
   ports:
     - name: service-registry
       port: 8761
   selector:
-    app: service-registry
+    app: clashbots
