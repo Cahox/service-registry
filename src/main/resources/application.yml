@@ -5,10 +5,10 @@ spring:
   application:
     name: service-registry
 
-management:
-  endpoint:
-    health:
-      enabled: true
+#management:
+#  endpoint:
+#    health:
+#      enabled: true
 
 eureka:
   client:
