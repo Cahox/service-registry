@@ -14,5 +14,3 @@ eureka:
   client:
     register-with-eureka: false
     fetch-registry: false
-    serviceUrl:
-      defaultZone: https://service-registry-cahox.cloud.okteto.net:8761/eureka/
